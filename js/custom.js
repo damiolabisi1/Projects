@@ -22,12 +22,11 @@
     // SMOOTHSCROLL
     $(function() {
       $('.nav-link, .custom-btn-link').on('click', function(event) {
-        location.href = www.google.com;
-        // var $anchor = $(this);
-        // $('html, body').stop().animate({
-        //     scrollTop: $($anchor.attr('href')).offset().top - 49
-        // }, 1000);
-        // event.preventDefault();
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top - 49
+        }, 1000);
+        event.preventDefault();
       });
     });  
 
